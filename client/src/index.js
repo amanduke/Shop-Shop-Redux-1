@@ -4,10 +4,29 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+// import rootReducer from './utils/reducers';
+import reducer from './utils/reducers'
+import { configureStore } from '@reduxjs/toolkit'
+
+// const store = createStore(reducer);
+// const store = configureStore({
+//   reducer: reducer
+// })
+
+// export default store
+
+
+
+
+
 ReactDOM.render(
+  // <Provider store={store}>
   <React.StrictMode>
     <App />
   </React.StrictMode>,
+  // </Provider>,
   document.getElementById('root')
 );
 

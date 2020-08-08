@@ -5,7 +5,8 @@ import { useQuery } from '@apollo/react-hooks';
 import { QUERY_PRODUCTS } from "../utils/queries";
 import spinner from '../assets/spinner.gif'
 
-import { useStoreContext } from "../utils/GlobalState";
+// import { useStoreContext } from "../utils/GlobalState";
+import { useDispatch, useSelector } from 'react-redux';
 
 import Cart from '../components/Cart';
 
@@ -21,21 +22,14 @@ import { idbPromise } from '../utils/helpers';
 
 
 function Detail() {
-  // const { id } = useParams();
 
-  // const [currentProduct, setCurrentProduct] = useState({})
 
-  // const { loading, data } = useQuery(QUERY_PRODUCTS);
+  const state = useSelector((state) => {
+    return state
+  });
+  const dispatch = useDispatch();
 
-  // const products = data?.products || [];
 
-  // useEffect(() => {
-  //   if (products.length) {
-  //     setCurrentProduct(products.find(product => product._id === id));
-  //   }
-  // }, [products, id]);
-
-  const [state, dispatch] = useStoreContext();
 
   const { id } = useParams();
 
