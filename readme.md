@@ -22,8 +22,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Deployed Application 
 
-[Shop Shop](TBD)<br />
-![Image](TBD)<br />
+[Shop Shop](https://shop-shop-redux.herokuapp.com/)<br />
+![Image](https://github.com/izabelacloud/Shop-Shop-Redux/blob/master/shop-shop.gif?raw=true)<br />
 
 ## User Story
 
