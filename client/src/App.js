@@ -11,8 +11,6 @@ import Signup from "./pages/Signup";
 import Nav from "./components/Nav";
 import OrderHistory from "./pages/OrderHistory";
 import Success from './pages/Success'
-
-// import {connect} from 'react-redux';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 
@@ -35,7 +33,6 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          {/* <StoreProvider> */}
           <Provider store={store}>
           <Nav />
           <Switch>
@@ -48,7 +45,6 @@ function App() {
             <Route component={NoMatch} />
           </Switch>
           </Provider>
-          {/* </StoreProvider> */}
         </div>
       </Router>
     </ApolloProvider>
